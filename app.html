@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>search in javascript</title>
+<link rel="stylesheet" href="app.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+                <!--menu bar-->
+<div class="menu-bar">
+            
+<i class="search-icon fas fa-search"></i>
+    <div class="search-screen">
+        <i class="close-icon fas fa-times"></i>
+    </div>
+    <img src="webees.png" class="logo">
+        <ul>
+            <li><a href="D:\project\WS\home page\page1.html">Home</a></li>
+            <li class="active"><a href="D:\project\WS\home page\Catalogue\catalogue.html">Catalogue</a></li>
+            <li><a href="D:\project\WS\home page\about us\Aboutus.html">About us</a></li> 
+                    
+                    
+                         <!--   <li class="zoom" style="float:right">
+                                <div class="search-container">
+                                    <form action="/search" style="float:right" method="get">
+                                      <input class="search expandright" id="searchright" type="search" name="q"  placeholder="search your food here ....">
+                                      <label class="button searchbutton" for="searchright">
+                                        <span class="mglass">&#9906;</span></label>
+                                    </form>
+                                  </div>
+                                  </li>  -->                             
+                                  
+        </ul>
+</div> 
+
+               <!--catalogue-->
+<div class="container-fluid">
+<div class="container">
+    <h1 class="heading">Webees food court</h1><br>
+<div class="search">
+<input type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
+</div>
+<div class="product-list">
+    <!--catalogue starters items-->
+    <div class="heading"><h1>starters</h1><br></div>
+    <div class="group1">
+    <div class="card">
+        <img src="img/starters/samosa_270x287.jpg" class="food-img" alt="">
+        <h3 class="heading">chicken samosa</h3>
+        <h4 class="price">₹50.00 - <del>₹80.00</del></h4>
+        <p>Chicken samosa is a snack made of spiced minced chicken, finely chopped onions, and cilantro. This is usually served with a dipping sauce, such as green chutney.</p>
+    </div>
+    <div class="card">
+        <img src="img/starters/sawarma.jpg" class="food-img" alt="">
+        <h3 class="heading">chicken shawarma </h3>
+        <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+        <p>chicken shawarma is basically well-marinated chicken, where it's slow-roasted for days--in its own juices and fat--until perfectly tender and extra flavorful</p>
+    </div>
+    <div class="card">
+        <img src="img/starters/popcorn.jpg" class="food-img" alt="">
+        <h3 class="heading">chicken popcorn</h3>
+        <h4 class="price">₹80.00 - <del>₹100.00</del></h4>
+        <p>Popcorn chicken is a chicken pieces using broiler chicken that are marinated with red chilli powder, black pepper, salt and lemon juice and coated around flour batter and then deep fried.</p>
+    </p>
+    </div>
+    <div class="card">
+        <img src="img/starters/wings.jpg" class="food-img" alt="">
+        <h3 class="heading">chicken wings </h3>
+        <h4 class="price">₹60.00 - <del>₹180.00</del></h4>
+        <p>Fried chicken, also known as Southern fried chicken, is a dish consisting of chicken pieces that have been coated with seasoned flour or batter and pan-fried, deep fried, pressure fried, or air fried</p>
+    </p>
+    </div>
+    <div class="card">
+        <img src="img/starters/Tandoori.jpg" class="food-img" alt="">
+        <h3 class="heading">Grilled chicken </h3>
+        <h4 class="price">₹350.00 - <del>₹450.00</del></h4>
+        <p>Grilled chicken is a savory dish made by cooking chicken over an open flame or on a grill. The chicken is typically seasoned with a variety of herbs and spices, such as garlic, paprika, and black pepper, to enhance its flavor.</p>
+    </p>
+    </div>
+    <div class="card">
+        <img src="img/starters/crab.jpg" class="food-img" alt="">
+        <h3 class="heading">Prawn fry </h3>
+        <h4 class="price">₹150.00 - <del>₹200.00</del></h4>
+        <p>Prawn fry is a popular seafood dish that is typically made by sautéing or frying fresh prawns in a variety of aromatic spices and herbs. The dish is widely popular in coastal regions and is a favorite among seafood lovers.
+        </p>
+    </div>
+    <div class="card">
+        <img src="img/starters/lollipop_270x287.jpg" class="food-img" alt="">
+        <h3 class="heading">crab lollipop</h3>
+        <h4 class="price">₹120.00 - <del>₹160.00</del></h4>
+        <p>Crab lollipop is a popular seafood appetizer that is made from fresh crab meat. The dish gets its name from the way the crab meat is formed into small balls.</p>
+    </div>
+    <div class="card">
+        <img src="img/starters/fish.jpg" class="food-img" alt="">
+        <h3 class="heading">Kerala style fish fry</h3>
+        <h4 class="price">₹200.00 - <del>₹250.00</del></h4>
+        <p>Kerala style fish fry is a popular South Indian dish that is made by marinating fish in a blend of flavorful spices and then shallow frying until it is crispy and golden brown.</p>
+    </div>
+    <div class="card">
+        <img src="img/starters/peri peri.jpg" class="food-img" alt="">
+        <h3 class="heading">peri peri fish fry</h3>
+        <h4 class="price">₹120.00 - <del>₹150.00</del></h4>
+        <p>Peri peri fish fry is a popular dish that originated in Africa. The dish is made by marinating fish in a flavorful blend of peri peri spices and then frying it until it is crispy and golden brown.
+        </p>
+    </div>
+    </div>
+                        <!--catalogue soup items-->
+    <div class="soup"><h1>soup</h1><br></div>
+    <div class="group2">
+        <div class="card">
+            <img src="img/soup/corn.jpg" class="food-img" alt="">
+            <h3 class="heading">Corn Soup</h3>
+            <h4 class="price">₹60.00 - <del>₹80.00</del></h4>
+            <p>Corn soup is a creamy and comforting soup made from fresh or canned corn, milk or cream, and flavorful seasonings. Corn kernels are cooked with onions, garlic, and herbs in a broth or stock until they are soft and tender. The mixture is then pureed in a blender until smooth and creamy
+            </p>
+        </div>
+        <div class="card">
+            <img src="img/soup/tomato_270x287.jpg" class="food-img" alt="">
+            <h3 class="heading">Tomato Soup</h3>
+            <h4 class="price">₹50.00 - <del>₹65.00</del></h4>
+            <p>Tomato soup is a classic and comforting soup that is made from fresh or canned tomatoes, broth or stock, and a variety of seasonings.Chopped onions and garlic are sautéed in a pot until they are fragrant and soft. Fresh or canned tomatoes are then added to the pot along with broth or stock and herbs such as basil, oregano, or thyme. The mixture is simmered until the tomatoes are soft and tender.</p>
+        </p>
+        </div>
+        <div class="card">
+            <img src="img/soup/chicken noodle.jpg" class="food-img" alt="">
+            <h3 class="heading">Chicken Noodle Soup</h3>
+            <h4 class="price">₹170.00 - <del>₹185.00</del></h4>
+            <p>Chicken noodle soup is a hearty and comforting soup made with chicken, noodles, vegetables, and flavorful seasonings. Chicken pieces, such as breasts or thighs, are cooked in a pot with water, chicken broth or stock, onions, garlic, and herbs until they are tender and cooked through. The chicken is then removed from the pot and shredded or chopped into bite-sized pieces.</p>
+        </p>
+        </div>
+        <div class="card">
+            <img src="img/soup/Italian-Wedding-Soup.jpg" class="food-img" alt="">
+            <h3 class="heading">Italian Wedding Soup</h3>
+            <h4 class="price">₹150.00 - <del>₹175.00</del></h4>
+            <p>Italian wedding soup is a delicious and comforting soup that is traditionally served at Italian weddings.It is made with meatballs, vegetables, pasta, and a flavorful broth.</p>
+        </div>
+        <div class="card">
+            <img src="img/soup/mutton-bone.jpg" class="food-img" alt="">
+            <h3 class="heading">Mutton Bone Soup</h3>
+            <h4 class="price">₹60.00 - <del>₹85.00</del></h4>
+            <p>Mutton bone soup is a nutritious and flavorful soup that is made using mutton bones, vegetables, and a variety of spices.mutton bones are first boiled in a pot with water, onions, garlic, and ginger until the bones are tender and the stock is rich and flavorful. Vegetables such as carrots, celery, and potatoes is added for additional flavor and nutrition.</p>
+        </div>
+        <div class="card">
+            <img src="img/soup/chicken--sweetcorn-soup.jpg" class="food-img" alt="">
+            <h3 class="heading">chicken sweetcorn soup</h3>
+            <h4 class="price">₹70.00 - <del>₹85.00</del></h4>
+            <p>Vegetable soup is a simple soup made with various vegetables,leafy greens,herbs and sometimes spices.it is made in various cultures and cuisines across the world.so you will find numerous ways to make it but the one ingredient you will always find in all of these is the vegetables.This vegetable soup uses veggies like carrot,peas,sweet corn,green beans and cabbages.</p>
+        </div>
+    </div>
+                    <!--catelogue main course items-->
+                    <div class="main course"><h1>main course</h1></div>
+                    <div class="group5">
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">Chicken Kacchi Biryani</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p>Kacchi Hyderabadi Biryani is made with layers of raw marinated chicken sandwiched between layers of basmati rice flavored with saffron, onions, and dried fruits.  </p>
+                            </div>
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">Thalassery Biryani</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p> It is a South Indian dish made with prawn and fish along with the regional spices.</p>
+                        </div>    
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">Mutton Beary Biryani</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p>It is a Hyderabadi biryani made with mutton and left to rest the dish overnight for its unique flavour.</p>
+                        </div>
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">Butter Naan</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p>The famous Indian roti made with refined flour and buttermilk. It will be coated with butter.</p>
+                        </div>
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">Chicken Fried Rice</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p>Chicken fried rice is the dish made by stir-fried in a wok or a frying pan and is usually mixed with other ingredients such as egg along with chicken.</p>
+                        </div>
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">Chicken Schezwan Fried Rice</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p>Schezwan fried rice is hot & spicy with bursting flavors of ginger, garlic, soya sauce & red chilli paste.</p>
+                        </div>
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">Egg Fried Rice</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p>Egg fried rice made of  boiled or steamed rice that is stir-fried typically with soya sauce, beaten egg.</p>
+                        </div>
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">Chicken Noodles</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p>This European and Asian cuisine is made of flour, egg and water that are cooked in chicken soup.</p>
+                        </div>
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">Chicken Schezwan Noodles</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p>The schezwan noodles is made of noodles mixed with the spices of soya sauce and red chilly paste.</p>
+                        </div>
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">Non-Veg Meals</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p>The non-veg meals contains various mix of dishes with rice, chicken or mutton gravy along with a sweet and an egg.</p>
+                        </div>
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">Veg Meals</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p>The veg meal contains the dishes of rice, vegetable gravy along with the sweet and papad.</p>
+                        </div>
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">Chowmein</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p>Chowmein is a Chinese dish made from long stir-fried noodle with vegetables, soy sauce.</p>
+                        </div>
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">Chicken Chowmein</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p>It is an American Chinese cuisine consisting noodles, chicken, onion, celery, tofu.</p>
+                        </div>
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">American Chopsuey</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p>This is a dish of elbow macaroni, ground chicken, and tomatoes or tomato sauce typically with chopped onions and green peppers.</p>
+                        </div>
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">Schezwan Chopsuey</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p>This is a dish of elbow macaroni, ground chicken, and tomatoes or tomato sauce typically along with red pepper paste chopped onions and green peppers.</p>
+                        </div>
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">Non veg Platter</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p>This is a Non Veg Tandoori Mix Platter contains chicken tikka, fish tikka and mutton seekh kebab along with rice.</p>
+                        </div>
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">Chicken dosa</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p>This is a famous street food of south Tamilnadu made with dosa coated with spicy chicken chops</p>
+                        </div>
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">Mutton dosa</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p>This is a famous street food of south Tamilnadu made with dosa coated with spicy mutton chops.</p>
+                        </div>
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">Grilled Chicken Sandwich</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p>The American street food consist of bread holding Grilled chicken inside the bread with onion and cabbage.</p>
+                        </div>
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">Veg Pizza</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p>Pizza is an Italian dish made of refined flour, cheese and topped with capsicum, olive and other vegetables.</p>
+                        </div>
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">Chicken Roast Pizza</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p>The pizza topped with the grilled chicken, cheese with spices and roasted extra in the oven.</p>
+                        </div>
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">Parotta</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p>Parotta is the layered rotti made from Maida, it is one of the most popular unleavened flatbreads in the Indian subcontinent.        </p>
+                        </div>
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">Chicken kothu parotta</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p>The famous street food from Tamilnadu made with fresh parotta, onion and chicken gravy.</p>
+                        </div>
+                        <div class="card">
+                            <img src="" class="food-img">
+                            <h3 class="heading">Jeera Rice</h3>
+                            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+                            <p>Jeera rice is also called as Jeeraga samba is a very aromatic rice made with jeera and helps with digestion.</p>
+                        </div>
+                        <!--catalogue beverages items-->
+    <div class="beverages"><h1>Beverages</h1><br></div>
+    <div class="group3">
+        <div class="card">
+            <img src="img/juice/Chocolate-lassi_270x287.jpg" class="food-img" alt="">
+            <h3 class="heading">Chocolatey lassi</h3>
+            <h4 class="price">₹110.00 - <del>₹130.00</del></h4>
+            <p>Chocolatey lassi is a delicious and refreshing beverage that combines the rich, creamy texture of lassi with the indulgent flavor of chocolate. Lassi is a traditional Indian yogurt-based drink that is typically served chilled and flavored with various spices and fruits</p>
+        </div><div class="card">
+            <img src="img/juice/frozon-mojito_270x287.jpg" class="food-img" alt="">
+            <h3 class="heading">Frozen mojito </h3>
+            <h4 class="price">₹120.00 - <del>₹140.00</del></h4>
+            <p>A frozen mojito is a refreshing cocktail that is perfect for warm weather. It is a variation of the classic mojito, which is a cocktail made with rum, lime juice, mint leaves, sugar, and soda water. In a frozen mojito, the ingredients are blended together with ice to create a slushy consistency.</p>
+        </div><div class="card">
+            <img src="img/juice/vrigin_270x287.jpg" class="food-img" alt="">
+            <h3 class="heading">Virgin mojito</h3>
+            <h4 class="price">₹115.00 - <del>₹135.00</del></h4>
+            <p>Virgin mojito -> A virgin mojito, also known as a mocktail or non-alcoholic mojito, is a refreshing and flavorful drink that is perfect for those who prefer not to consume alcohol. It is a variation of the classic mojito, which is a cocktail made with rum, lime juice, mint leaves, sugar, and soda water. In a virgin mojito, the rum is omitted and replaced with another ingredient such as soda water or fruit juice.</p>
+        </div><div class="card">
+            <img src="img/juice/rum-punches_270x287.jpg" class="food-img" alt="">
+            <h3 class="heading">Rum punch</h3>
+            <h4 class="price">₹200.00 - <del>₹215.00</del></h4>
+            <p>Rum punch -> Rum punch is a classic cocktail that is popular in tropical regions and beach destinations. It is a refreshing and fruity drink that combines the flavors of rum, tropical juices, and citrus.</p>
+        </div><div class="card">
+            <img src="img/juice/cosmos_270x287.jpg" class="food-img" alt="">
+            <h3 class="heading">Cosmopolitan </h3>
+            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+            <p>Cosmopolitan -> A cosmopolitan, also known as a "cosmo," is a classic cocktail that became popular in the 1990s. It is a sweet and tart drink that combines the flavors of vodka, cranberry juice, lime juice, and orange liqueur.
+            </p>
+        </div><div class="card">
+            <img src="img/juice/Blue-Lagoon-Cocktail_270x287.jpg" class="food-img" alt="">
+            <h3 class="heading">Blue-Lagoon-Cocktail</h3>
+            <h4 class="price">₹80.00 - <del>₹95.00</del></h4>
+            <p>This bevarage is not just well-known street find in these regions,but are alsosold at convenience stores.The consistency and taste of the Mexican Aqua Fresca is different than the regular watermelon juice.The Watermelon juice in the Aqua Fresca recipe is Strained and extracted from the pulp unlike the watermelon juice whhich has the pulp. </p>
+        </div>
+    </div>
+                        <!--catalogue gravy items-->
+    <div class="gravy"><h1>gravy</h1><br></div>
+    <div class="group4">
+        <div class="card">
+            <img src="img/gravy/" class="food-img" alt="">
+            <h3 class="heading">Bangalore Chicken</h3>
+            <h4 class="price">₹200.00 - <del>₹220.00</del></h4>
+            <p>Bangalore Chicken -> Bangalore chicken is a spicy and flavorful dish that is popular in Indian cuisine. It is a dish that originated in the city of Bangalore in the southern state of Karnataka.Boneless chicken pieces are marinated in a mixture of spices, including turmeric, red chili powder, cumin, coriander, and garam masala. The chicken is then pan-fried or grilled until golden brown and cooked through</p>
+        </div>
+        <div class="card">
+            <img src="img/gravy/" class="food-img" alt="">
+            <h3 class="heading">Butter Chicken</h3>
+            <h4 class="price">₹220.00 - <del>₹240.00</del></h4>
+            <p>Butter Chicken -> Butter chicken, also known as murgh makhani, is a popular Indian dish that originated in the northern state of Punjab. It is a rich and creamy dish that is made with marinated and grilled chicken in a tomato-based sauce</p>
+        </div>
+        <div class="card">
+            <img src="img/gravy/" class="food-img" alt="">
+            <h3 class="heading">Chicken Sinthamani</h3>
+            <h4 class="price">₹180.00 - <del>₹195.00</del></h4>
+            <p>Chicken Sinthamani -> Chicken Sinthamani is a spicy and tangy South Indian dish that originated in the state of Tamil Nadu. It is a flavorful dish that is made with boneless chicken pieces cooked in a spicy tomato-based gravy.Boneless chicken pieces are marinated in a mixture of yogurt, turmeric, and chili powder. The chicken is then pan-fried until golden brown and cooked through.</p>
+        </div>
+        <div class="card">
+            <img src="img/gravy/" class="food-img" alt="">
+            <h3 class="heading">Pakistani Bhuna Gosht</h3>
+            <h4 class="price">₹150.00 - <del>₹175.00</del></h4>
+            <p>Pakistani Bhuna Gosht -> Pakistani Bhuna Gosht is a popular and flavorful meat dish that is commonly made in Pakistani and Indian cuisine.Pakistani Bhuna Gosht, meat is marinated in a blend of spices, including cumin, coriander, turmeric, chili powder, and garam masala, and then browned in oil or ghee until it is crispy and browned on the outside. Onions, ginger, and garlic are then added to the pan and cooked until they are soft and fragrant</p>
+        </div>
+        <div class="card">
+            <img src="img/gravy/" class="food-img" alt="">
+            <h3 class="heading">Kerala style Mutton Pepper fry</h3>
+            <h4 class="price">₹200.00 - <del>₹220.00</del></h4>
+            <p>Kerala style Mutton Pepper fry -> Kerala style mutton pepper fry is a delicious and spicy meat dish that originated in the southern Indian state of Kerala. It is a flavorful dish made with tender pieces of mutton (goat meat) that are marinated with spices and then cooked with onions, curry leaves, and black pepper
+            </p>
+        </div>
+        <div class="card">
+            <img src="img/gravy/" class="food-img" alt="">
+            <h3 class="heading">Mushroom pepper gravy</h3>
+            <h4 class="price">₹150.00 - <del>₹175.00</del></h4>
+            <p>Mushroom pepper gravy -> Mushroom pepper gravy is a spicy dish having the prominent pepper flavour .Mushrooms are storehouse of nutrients.It is a storehouse of nutrients.It is a rich source of calcium and vitamin D,making it beneficial for bone health and overall immune system in the body.Mushroom pepper gravy is a semi gravy dish,making a great accompaintment for rotis's and steamed rice for a healthy lunch or dinner.</p>
+        </div>
+    </div>    
+                       <!--catalogue Dessert items-->
+    <div class="Dessert"><h1>dessert</h1><br></div>
+    <div class="group4">
+        <div class="card">
+            <img src="img/dessert/Baklava_270x287.jpg" class="food-img" alt="">
+            <h3 class="heading">Baklava</h3>
+            <h4 class="price">₹150.00 - <del>₹175.00</del></h4>
+            <p>Baklava is a sweet and flaky dessert that is popular in many parts of the world, particularly in the Middle East, Mediterranean, and Balkan regions. It is made with layers of phyllo pastry, chopped nuts, and a sweet syrup or honey.</p>
+        </div>
+        <div class="card">
+            <img src="img/dessert/Cherry-Pie_270x287.jpg" class="food-img" alt="">
+            <h3 class="heading">Cherry Pie</h3>
+            <h4 class="price">₹250.00 - <del>₹275.00</del></h4>
+            <p>Cherry pie is a classic American dessert that is made with a flaky pastry crust and a sweet cherry filling.For the filling, pitted cherries are mixed with sugar, cornstarch, and lemon juice to create a sweet and tangy mixture.</p>
+        </div>
+        <div class="card">
+            <img src="img/dessert/chocolate_cupcake_270x287.jpg" class="food-img" alt="">
+            <h3 class="heading">Chocolate Cupcake </h3>
+            <h4 class="price">₹220.00 - <del>₹240.00</del></h4>
+            <p>Chocolate cupcakes are a delicious and popular dessert that are perfect for any occasion. They are made with a rich and moist chocolate cake base and topped with frosting or other decorations.</p>
+        </div>
+        <div class="card">
+            <img src="img/dessert/brownie_270x287.png" class="food-img" alt="">
+            <h3 class="heading">Brownie</h3>
+            <h4 class="price">₹200.00 - <del>₹225.00</del></h4>
+            <p>Brownies are a delicious and indulgent dessert that are made with chocolate, sugar, butter, and eggs. They are rich and fudgy in texture and are a favorite treat for many people.</p>
+        </div>
+        <div class="card">
+            <img src="img/dessert/macarns_270x287.jpg" class="food-img" alt="">
+            <h3 class="heading">Macarons</h3>
+            <h4 class="price">₹200.00 - <del>₹225.00</del></h4>
+            <p>Macarons are sweet and colorful French confections that are made with egg whites, almond flour, and sugar. They are known for their delicate texture and delicious flavor, and are often filled with buttercream, ganache, or fruit preserves.</p>
+        </div>
+        <div class="card">
+            <img src="img/dessert/tiramisu-2_270x287.png" class="food-img" alt="">
+            <h3 class="heading">Tiramisu</h3>
+            <h4 class="price">₹250.00 - <del>₹275.00</del></h4>
+            <p>Tiramisu is a classic Italian dessert that is made with layers of ladyfingers soaked in espresso and liqueur, and a rich and creamy filling made with mascarpone cheese, eggs, sugar, and sometimes whipped cream. It is a popular dessert that is often served at special occasions or restaurants</p>
+        </div>
+        <div class="card">
+            <img src="img/dessert/coconut-icecream_270x287.jpg" class="food-img" alt="">
+            <h3 class="heading">Tender Coconut Terrine </h3>
+            <h4 class="price">₹100.00 - <del>₹120.00</del></h4>
+            <p>Tender Coconut Terrine  ->  Tender Coconut Terrine which is a light and refreshing dessert that is popular in tropical regions. It is made with tender coconut meat, gelatin, and coconut cream, and can be flavored with fruit or other ingredients as desired</p>
+        </div>
+        <div class="card">
+            <img src="img/dessert/VanillaChocoBerryIceCream_270x287.jpg" class="food-img" alt="">
+            <h3 class="heading">Vennila choco berry </h3>
+            <h4 class="price">₹120.00 - <del>₹135.00</del></h4>
+            <p>Vennila choco berry  ->  "Vanilla choco berry" is a dessert that typically consists of a vanilla cake or cupcake that is filled with chocolate and berries.</p>
+        </div>
+        <div class="card">
+            <img src="img/dessert/cottan_270x287.jpg" class="food-img" alt="">
+            <h3 class="heading">Cotton Candy</h3>
+            <h4 class="price">₹50.00 - <del>₹65.00</del></h4>
+            <p>Cotton Candy  ->  Cotton candy is a type of candy that is made by spinning sugar and food coloring into thin threads and then collecting the threads into a fluffy, cloud-like mass. It is also known as "fairy floss" or "candy floss" in some countries.</p>
+        </div>
+    </div>
+    
+<div class="card">
+    <img src="https://source.unsplash.com/1600x800/?headphones" class="food-img" alt="">
+    <h3>def</h3>
+    <p>hii am smiley this is our first startup</p>
+</div>
+<div class="card">
+    <img src="https://source.unsplash.com/1600x800/?headphones" class="food-img" alt="">
+    <h3>ghj</h3>
+    <p>hii am smiley this is our first startup</p>
+</div>
+<div class="card">
+    <img src="https://source.unsplash.com/1600x800/?headphones" class="food-img" alt="">
+    <h3>ijk</h3>
+    <p>hii am smiley this is our first startup</p>
+</div>
+
+</div>
+</div>
+</div>
+<!-- javascript -->
+<script type="text/javascript">
+function search() {
+let filter = document.getElementById('find').value.toUpperCase();
+let item = document.querySelectorAll('.card');
+let l = document.getElementsByTagName('h3');
+for(var i = 0;i<=l.length;i++){
+let a=item[i].getElementsByTagName('h3')[0];
+let value=a.innerHTML || a.innerText || a.textContent;
+if(value.toUpperCase().indexOf(filter) > -1) {
+item[i].style.display="";
+}
+else
+{
+item[i].style.display="none";
+}
+}
+}
+</script>
+</body>
+</html>
